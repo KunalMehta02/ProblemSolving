@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<style>
+    .Add-Item{
+        border: none;
+        background-color: rgb(97, 255, 97);
+        padding: 5px 15px;
+        border-radius: 10px;
+    }
+    .remove-Items{
+
+        border: 2px solid rgb(212, 212, 212);
+        background-color: red;
+        padding: 5px 25px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+    <button class="Add-Item" onclick="addproduct++; document.querySelector(
+    '#add-product').innerHTML=`Add Your favirout ${addproduct} Items`"> Add Items</button>
+    <button class="remove-Items" onclick="addproduct--; document.querySelector(
+    '#add-product').innerHTML=`Add Your favirout ${addproduct} Items`">Remove Items</button>
+    <h1 id="add-product"></h1>
+    <script>
+        let addproduct=0;
+        document.querySelector("#add-product").innerHTML=`Add Your favirout ${addproduct} Items`;
+        console.log('error')
+    </script>
+</body>
+</html>
